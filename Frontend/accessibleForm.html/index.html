@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+
+            <!-- Full Name -->
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="What should we call you?" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@doe.com" class="error" aria-invalid="true">
+            <span class="error-message">Email is already taken</span>
+
+            <!-- Password -->
+            <label for="password">Enter Password</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+            </div>
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+                <input type="password" id="confirm-password" placeholder="xxxxxxxx" aria-required="true">
+                <button type="button" class="toggle-password" aria-label="Show password">👁</button>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Update Profile</button>
+        </form>
+
+        <!-- Profile Completeness Section -->
+        <div class="profile-completeness">
+            <div class="progress-circle">65%</div>
+            <h3>Profile Completeness</h3>
+            <div class="task-list">
+                <s>Create Account</s>
+                <s>Update Roadmap Progress</s>
+                <s>Setup Public Profile</s>
+                <p>✅ Complete your first project</p>
+                <p>✅ Invite your Friends</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
